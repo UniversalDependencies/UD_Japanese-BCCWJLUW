@@ -10,7 +10,7 @@ We use **Long Unit Word (LUW)** as their syntactic word in UD definition.
 # Introduction
 
 The Japanese UD treebank contains the sentences from BCCWJ [1]
-http://pj.ninjal.ac.jp/corpus_center/bccwj/en/
+https://clrd.ninjal.ac.jp/bccwj/en/
 with BCCWJ-DepPara[2] annotation.
 
 The word units is based on **Long Unit Word** in BCCWJ [1].
@@ -33,7 +33,7 @@ the script requires Python (3.x)
 or
 
 The BCCWJ DVD edition purchaser can download the data with the original text
-from https://bccwj-data.ninjal.ac.jp/mdl/
+from https://bccwj-data.ninjal.ac.jp/
 
 ## Spliting
 
@@ -62,7 +62,7 @@ through annotation, discussion and validation with
 - Kayo Yamashita
 
 This work was supported by JSPS KAKENHI Grants Numbers JP17H00917
-and is a project of the Center for Corpus Development, NINJAL.
+and NINJAL Annotation Project.
 
 # License
 
@@ -79,7 +79,10 @@ Matsumoto, Y. (2016). Universal Dependencies for Japanese. In LREC-2016.
 Matsumoto, Y., Omura, M., & Murawaki, Y. (2018). Universal Dependencies Version 2 for Japanese. In LREC-2018.
 
 Changelog
-
+2022-11-01   v2.10 **(UD_Japanese-BCCWJLUW)**
+  * Update v2.10 to v2.11
+2022-05-01   v2.10 **(UD_Japanese-BCCWJLUW)**
+  * Update v2.9 to v2.10
 2021-11-01   v2.9 **(UD_Japanese-BCCWJLUW)**
   * Initial release in Universal Dependencies.
 2021-05-01   v2.8 (UD_Japanese-BCCWJ)
