@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 13e6b709a8bc643c3f902800321a7beda46feb8d
+commit 04abe686385f14a9a6f68784bd723a6b60ded594
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 13 22:03:41 2022 +0100
+Date:   Tue May 9 00:14:39 2023 +0200
 Evaluating the following revision of UD_Japanese-BCCWJLUW:
-commit f2d9761f67b4ae232609d5f18626ac677aa68992
-Merge: 7c3bf7c e55db90
+commit abb786341b272b192bd8ad249a5d93b56d3e0413
+Merge: 43bb423 5d36f5f
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Size: counted 995632 of 995632 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8067554227983.
@@ -26,11 +26,11 @@ Udapi: worst expected case (threshold) is one bug per 10 words. There are 995632
 Genres: found 5 out of 17 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
-validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-dev.conllu
+/net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-dev.conllu
 *** PASSED ***
-validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-test.conllu
+/net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-test.conllu
 *** PASSED ***
-validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-train.conllu
+/net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-train.conllu
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.12) = 0.00923076923076923
