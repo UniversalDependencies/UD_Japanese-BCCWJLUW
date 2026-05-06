@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Japanese-BCCWJLUW:
-commit 264c32501fbb5c8ec3e50db71caed8b998d9bff9
-Merge: 2b9f25e fdf6ec8
+commit 88916efcb3df32ae2e9881bcf71d520e3235787a
+Merge: 0574034 52f3e87
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'ja_bccwjluw'
@@ -21,52 +21,85 @@ Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
 Features: 7214 out of 995632 total words have one or more features.
 Features: source of annotation (from README) factor is 0.4.
-Universal relations: 26 out of 37 found in the corpus.
+Universal relations: 27 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Genres: found 5 out of 18 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-dev.conllu
-[Line 81 Sent A009p_OW6X_00012-6]: [L3 Warning obl-should-be-nmod] The parent (node [8] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 170 Sent A009p_OW6X_00012-9]: [L3 Warning obl-should-be-nmod] The parent (node [16] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 172 Sent A009p_OW6X_00012-9]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 598 Sent A009p_OW6X_00012-27]: [L3 Warning obl-should-be-nmod] The parent (node [19] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 897 Sent A009p_OW6X_00012-39]: [L3 Warning obl-should-be-nmod] The parent (node [4] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 980 Sent A009p_OW6X_00012-44]: [L3 Warning obl-should-be-nmod] The parent (node [30] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1433 Sent A010p_OW6X_00013-6]: [L3 Warning obl-should-be-nmod] The parent (node [27] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1462 Sent A010p_OW6X_00013-6]: [L3 Warning obl-should-be-nmod] The parent (node [56] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1482 Sent A010p_OW6X_00013-7]: [L3 Warning obl-should-be-nmod] The parent (node [13] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1534 Sent A010p_OW6X_00013-8]: [L3 Warning obl-should-be-nmod] The parent (node [23] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-Warnings: 3583
+[Line 172 Sent A009p_OW6X_00012-9]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1542 Sent A010p_OW6X_00013-8]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1728 Sent A010p_OW6X_00013-14]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1885 Sent A010p_OW6X_00013-18]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1991 Sent A010p_OW6X_00013-24]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2001 Sent A010p_OW6X_00013-24]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 2055 Sent A010p_OW6X_00013-25]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2079 Sent A010p_OW6X_00013-26]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2420 Sent A010p_OW6X_00013-35]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2495 Sent A010p_OW6X_00013-37]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 14781 Sent A013n_PM12_00014-63]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 22482 Sent A014p_OW6X_00017-155]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 26928 Sent A014n_PM13_00014-72]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 35123 Sent PB36_00006-3]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 35182 Sent PB36_00006-7]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 44241 Sent A017n_PM31_00020-85]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 47604 Sent A017n_PM31_00020-222]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 48031 Sent A017n_PM31_00020-240]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 48924 Sent A017n_PM31_00020-282]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 49762 Sent PB49_00007-16]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+Warnings: 2914
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-test.conllu
-[Line 16 Sent OC01_00001-2]: [L3 Warning obl-should-be-nmod] The parent (node [3] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 28 Sent OC01_00001-3]: [L3 Warning obl-should-be-nmod] The parent (node [3] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 60 Sent OC01_00001-5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 123 Sent OW6X_00000-4]: [L3 Warning obl-should-be-nmod] The parent (node [33] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 298 Sent OW6X_00000-7]: [L3 Warning obl-should-be-nmod] The parent (node [11] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 309 Sent OW6X_00000-7]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 426 Sent OW6X_00000-11]: [L3 Warning obl-should-be-nmod] The parent (node [65] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 566 Sent OW6X_00000-15]: [L3 Warning obl-should-be-nmod] The parent (node [39] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 623 Sent OW6X_00000-18]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 719 Sent OW6X_00000-23]: [L3 Warning obl-should-be-nmod] The parent (node [28] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-Warnings: 3217
+[Line 60 Sent OC01_00001-5]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 309 Sent OW6X_00000-7]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 623 Sent OW6X_00000-18]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 785 Sent OW6X_00000-25]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 944 Sent OW6X_00000-27]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 987 Sent OW6X_00000-30]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1040 Sent OW6X_00000-32]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1146 Sent OW6X_00000-33]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1359 Sent PB12_00001-5]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1376 Sent PB12_00001-6]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 7549 Sent A002p_PB43_00001-30]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 9396 Sent A002n_PM11_00002-65]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 12101 Sent A002n_PM11_00002-253]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 15674 Sent A003p_OW6X_00003-28]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 39035 Sent A006n_OY04_00027-25]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 39427 Sent A006n_OY04_00027-43]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 41325 Sent A006p_PB29_00003-72]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 47285 Sent A006n_PM12_00006-61]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 55251 Sent PB2n_00003-48]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 56451 Sent PB2n_00003-99]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+Warnings: 2584
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-train.conllu
-[Line 81 Sent B018p_OW6X_00019-3]: [L3 Warning obl-should-be-nmod] The parent (node [26] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 135 Sent B018p_OW6X_00019-4]: [L3 Warning obl-should-be-nmod] The parent (node [43] '_') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 47 Sent B018p_OW6X_00019-2]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 118 Sent B018p_OW6X_00019-4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 130 Sent B018p_OW6X_00019-4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 160 Sent B018p_OW6X_00019-5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 188 Sent B018p_OW6X_00019-5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 225 Sent B018p_OW6X_00019-6]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 243 Sent B018p_OW6X_00019-7]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 377 Sent B018p_OW6X_00019-10]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-Warnings: 15066
+[Line 47 Sent B018p_OW6X_00019-2]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 118 Sent B018p_OW6X_00019-4]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 130 Sent B018p_OW6X_00019-4]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 160 Sent B018p_OW6X_00019-5]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 188 Sent B018p_OW6X_00019-5]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 225 Sent B018p_OW6X_00019-6]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 243 Sent B018p_OW6X_00019-7]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 377 Sent B018p_OW6X_00019-10]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 382 Sent B018p_OW6X_00019-10]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 643 Sent B018p_OW6X_00019-18]: [L3 WARNING pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 5757 Sent B019p_OW6X_00028-150]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 33124 Sent PB39_00010-12]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 45419 Sent PB24_00012-18]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 47167 Sent PB24_00012-83]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 48711 Sent PB24_00012-140]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 49250 Sent PB24_00012-162]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _ _' does not have the 'ExtPos' feature
+[Line 51970 Sent B027n_PM21_00037-40]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 52097 Sent B027n_PM21_00037-44]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 52351 Sent B027n_PM21_00037-57]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+[Line 66116 Sent PB11_00013-78]: [L3 WARNING fixed-without-extpos] Fixed expression '_ _' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+Warnings: 11580
 *** PASSED ***
 Validity: 1
 (weight=0.111111111111111) * (score{features}=0.12) = 0.0133333333333333
@@ -75,7 +108,7 @@ Validity: 1
 (weight=0.37037037037037) * (score{size}=0.999366282184853) = 0.370135660068464
 (weight=0.0740740740740741) * (score{split}=1) = 0.0740740740740741
 (weight=0.111111111111111) * (score{tags}=0.8) = 0.0888888888888889
-(weight=0.111111111111111) * (score{udeprels}=0.562162162162162) = 0.0624624624624625
-(TOTAL score=0.640869727469198) * (availability=0.1) * (validity=1) = 0.0640869727469198
+(weight=0.111111111111111) * (score{udeprels}=0.583783783783784) = 0.0648648648648649
+(TOTAL score=0.643272129871601) * (availability=0.1) * (validity=1) = 0.0643272129871601
 STARS = 0.5
-UD_Japanese-BCCWJLUW	0.0640869727469198	0.5
+UD_Japanese-BCCWJLUW	0.0643272129871601	0.5
