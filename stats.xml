@@ -39,7 +39,7 @@
     <feat name="Polarity" value="Neg" upos="AUX,NOUN">6996</feat><!-- _ -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="28">
+  <deps unique="29">
     <dep name="acl">45485</dep>
     <dep name="advcl">47316</dep>
     <dep name="advmod">18662</dep>
@@ -49,6 +49,7 @@
     <dep name="cc">5604</dep>
     <dep name="ccomp">2677</dep>
     <dep name="compound">28657</dep>
+    <dep name="conj">3150</dep>
     <dep name="cop">9373</dep>
     <dep name="csubj">1352</dep>
     <dep name="csubj:outer">27</dep>
@@ -59,12 +60,12 @@
     <dep name="fixed">424</dep>
     <dep name="iobj">56</dep>
     <dep name="mark">37108</dep>
-    <dep name="nmod">77489</dep>
+    <dep name="nmod">78859</dep>
     <dep name="nsubj">47333</dep>
     <dep name="nsubj:outer">3064</dep>
     <dep name="nummod">2382</dep>
     <dep name="obj">32596</dep>
-    <dep name="obl">68976</dep>
+    <dep name="obl">64456</dep>
     <dep name="punct">144541</dep>
     <dep name="reparandum">16</dep>
     <dep name="root">57109</dep>
