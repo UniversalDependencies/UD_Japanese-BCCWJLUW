@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
+commit 59781c63b5b1c2ba74cd2b965d93f371e1c9d36a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 5 17:01:41 2026 +0200
+Date:   Tue Nov 10 13:08:27 2026 +0100
 Evaluating the following revision of UD_Japanese-BCCWJLUW:
-commit 88916efcb3df32ae2e9881bcf71d520e3235787a
-Merge: 0574034 52f3e87
+commit 44922d465b6cd9f2e9d408bd269fc0c88471629b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Wed May 6 13:10:11 2026 +0200
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'ja_bccwjluw'
 Language code (from CoNLL-U file name) = 'ja'
